@@ -39,7 +39,9 @@ function App() {
     }
   };
   const drawTree = (treedata) => {
-    return treedata.map((employee) => <DrawHierarcy key={employee.empId} employee={employee} />);
+    return treedata.map((employee) => (
+      <DrawHierarcy key={employee.empId} employee={employee} />
+    ));
   };
   return (
     <div className="App">
